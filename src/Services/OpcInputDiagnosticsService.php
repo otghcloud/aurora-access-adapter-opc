@@ -2,15 +2,15 @@
 
 namespace OTGH\AccessControl\OpcAdapter\Services;
 
-use App\Enums\AccessControl\AccessBindingActionKey;
-use App\Models\Access\Area;
-use App\Models\Hardware\AdapterBinding;
-use App\Models\Hardware\Lock;
-use App\Models\Hardware\Reader;
-use App\Models\Hardware\Source;
-use App\Services\AccessControl\AccessControlSettingsRepository;
 use Illuminate\Support\Carbon;
 use Illuminate\Support\Facades\Cache;
+use OTGH\AccessControl\Core\Enums\AccessControl\AccessBindingActionKey;
+use OTGH\AccessControl\Core\Models\Access\Area;
+use OTGH\AccessControl\Core\Models\Hardware\AdapterBinding;
+use OTGH\AccessControl\Core\Models\Hardware\Lock;
+use OTGH\AccessControl\Core\Models\Hardware\Reader;
+use OTGH\AccessControl\Core\Models\Hardware\Source;
+use OTGH\AccessControl\Core\Services\AccessControl\AccessControlSettingsRepository;
 use OTGH\AccessControl\OpcAdapter\Jobs\MonitorOpcSourceJob;
 use OTGH\AccessControl\OpcAdapter\OpcInputActionDispatcher;
 use OTGH\AccessControl\OpcAdapter\OpcUa\OpcUaSourceConfigResolver;

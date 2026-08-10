@@ -2,10 +2,10 @@
 
 namespace OTGH\AccessControl\OpcAdapter\Http\Controllers\Admin\Health;
 
-use App\Enums\AccessControl\AccessBindingActionKey;
-use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use Illuminate\View\View;
+use OTGH\AccessControl\Core\Enums\AccessControl\AccessBindingActionKey;
+use OTGH\AccessControl\Core\Http\Controllers\Controller;
 use OTGH\AccessControl\OpcAdapter\Services\OpcInputDiagnosticsService;
 
 class OpcDiagnosticsController extends Controller

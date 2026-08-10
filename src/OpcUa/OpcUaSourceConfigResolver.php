@@ -4,7 +4,7 @@ declare(strict_types=1);
 
 namespace OTGH\AccessControl\OpcAdapter\OpcUa;
 
-use App\Models\Hardware\Source;
+use OTGH\AccessControl\Core\Models\Hardware\Source;
 use RuntimeException;
 
 class OpcUaSourceConfigResolver

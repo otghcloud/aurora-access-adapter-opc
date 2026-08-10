@@ -4,17 +4,17 @@ declare(strict_types=1);
 
 namespace OTGH\AccessControl\OpcAdapter;
 
-use App\Enums\AccessControl\AccessBindingActionKey;
-use App\Jobs\ProcessReaderEvent;
-use App\Models\Access\Area;
-use App\Models\Access\Event;
-use App\Models\Hardware\AdapterBinding;
-use App\Models\Hardware\Lock;
-use App\Models\Hardware\Reader;
-use App\Models\Hardware\Source;
-use App\Support\SignalValueMapper;
 use Illuminate\Support\Facades\Cache;
 use Illuminate\Support\Facades\Log;
+use OTGH\AccessControl\Core\Enums\AccessControl\AccessBindingActionKey;
+use OTGH\AccessControl\Core\Jobs\ProcessReaderEvent;
+use OTGH\AccessControl\Core\Models\Access\Area;
+use OTGH\AccessControl\Core\Models\Access\Event;
+use OTGH\AccessControl\Core\Models\Hardware\AdapterBinding;
+use OTGH\AccessControl\Core\Models\Hardware\Lock;
+use OTGH\AccessControl\Core\Models\Hardware\Reader;
+use OTGH\AccessControl\Core\Models\Hardware\Source;
+use OTGH\AccessControl\Core\Support\SignalValueMapper;
 
 class OpcInputActionDispatcher
 {

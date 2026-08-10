@@ -4,8 +4,8 @@ declare(strict_types=1);
 
 namespace OTGH\AccessControl\OpcAdapter;
 
-use App\Models\Hardware\Source;
-use App\Services\AccessControl\SourceConnectionTesterInterface;
+use OTGH\AccessControl\Core\Models\Hardware\Source;
+use OTGH\AccessControl\Core\Services\AccessControl\SourceConnectionTesterInterface;
 use OTGH\AccessControl\OpcAdapter\OpcUa\OpcUaSourceConfigResolver;
 use TechDock\OpcUa\Client\ClientBuilder;
 use TechDock\OpcUa\Core\Types\NodeId;

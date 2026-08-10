@@ -4,15 +4,15 @@ declare(strict_types=1);
 
 namespace OTGH\AccessControl\OpcAdapter;
 
-use App\Models\Hardware\Source;
-use App\Services\AccessControl\AccessControlCapabilityRegistry;
-use App\Services\AccessControl\AccessControlConfigurationRegistry;
-use App\Services\AccessControl\DiagnosticsNavigationRegistry;
-use App\Services\AccessControl\HealthCheckRegistry;
-use App\Services\AccessControl\SourceConnectionTesterRegistry;
-use App\Services\Supervisor\SupervisorProgramRegistry;
 use Illuminate\Support\Facades\Schema;
 use Illuminate\Support\ServiceProvider;
+use OTGH\AccessControl\Core\Models\Hardware\Source;
+use OTGH\AccessControl\Core\Services\AccessControl\AccessControlCapabilityRegistry;
+use OTGH\AccessControl\Core\Services\AccessControl\AccessControlConfigurationRegistry;
+use OTGH\AccessControl\Core\Services\AccessControl\DiagnosticsNavigationRegistry;
+use OTGH\AccessControl\Core\Services\AccessControl\HealthCheckRegistry;
+use OTGH\AccessControl\Core\Services\AccessControl\SourceConnectionTesterRegistry;
+use OTGH\AccessControl\Core\Services\Supervisor\SupervisorProgramRegistry;
 use OTGH\AccessControl\OpcAdapter\Console\Commands\MonitorOpcSource;
 use OTGH\AccessControl\OpcAdapter\Console\Commands\OpcInputDiagnostics;
 use OTGH\AccessControl\OpcAdapter\Console\Commands\OpcTest;

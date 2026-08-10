@@ -2,11 +2,11 @@
 
 namespace OTGH\AccessControl\OpcAdapter\Console\Commands;
 
-use App\Models\Hardware\Source;
-use App\Services\AccessControl\AccessControlSettingsRepository;
 use Illuminate\Console\Attributes\Description;
 use Illuminate\Console\Attributes\Signature;
 use Illuminate\Console\Command;
+use OTGH\AccessControl\Core\Models\Hardware\Source;
+use OTGH\AccessControl\Core\Services\AccessControl\AccessControlSettingsRepository;
 use OTGH\AccessControl\OpcAdapter\OpcInputActionDispatcher;
 use OTGH\AccessControl\OpcAdapter\OpcUa\OpcUaMonitorService;
 use OTGH\AccessControl\OpcAdapter\OpcUa\OpcUaSourceConfigResolver;

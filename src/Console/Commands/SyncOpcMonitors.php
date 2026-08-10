@@ -2,12 +2,12 @@
 
 namespace OTGH\AccessControl\OpcAdapter\Console\Commands;
 
-use App\Models\Hardware\Source;
 use Illuminate\Console\Attributes\Description;
 use Illuminate\Console\Attributes\Signature;
 use Illuminate\Console\Command;
 use Illuminate\Support\Facades\Cache;
 use Illuminate\Support\Facades\Log;
+use OTGH\AccessControl\Core\Models\Hardware\Source;
 use OTGH\AccessControl\OpcAdapter\Jobs\MonitorOpcSourceJob;
 
 #[Signature('app:sync-opc-monitors {--json : Output machine-readable JSON} {--dry-run : Report actions without dispatching jobs}')]

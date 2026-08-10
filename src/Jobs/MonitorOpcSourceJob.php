@@ -2,12 +2,12 @@
 
 namespace OTGH\AccessControl\OpcAdapter\Jobs;
 
-use App\Services\AccessControl\AccessControlSettingsRepository;
 use Illuminate\Contracts\Queue\ShouldQueue;
 use Illuminate\Foundation\Queue\Queueable;
 use Illuminate\Queue\SerializesModels;
 use Illuminate\Support\Facades\Cache;
 use Illuminate\Support\Facades\Log;
+use OTGH\AccessControl\Core\Services\AccessControl\AccessControlSettingsRepository;
 use OTGH\AccessControl\OpcAdapter\OpcInputActionDispatcher;
 use OTGH\AccessControl\OpcAdapter\OpcUa\OpcUaMonitorService;
 use OTGH\AccessControl\OpcAdapter\OpcUa\OpcUaSourceConfigResolver;
