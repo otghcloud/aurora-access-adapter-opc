@@ -1,0 +1,24 @@
+{
+    "name": "otghcloud/aurora-access-adapter-opc",
+    "description": "OPC adapter integration package for Access Control",
+    "type": "library",
+    "license": "MIT",
+    "require": {
+        "otghcloud/aurora-access-core": "*@dev",
+        "techdock/opcua": "^0.3.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "OTGH\\AccessControl\\OpcAdapter\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "OTGH\\AccessControl\\OpcAdapter\\OpcAdapterServiceProvider"
+            ]
+        }
+    },
+    "minimum-stability": "stable",
+    "prefer-stable": true
+}
