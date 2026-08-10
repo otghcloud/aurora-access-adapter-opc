@@ -4,7 +4,7 @@
     "type": "library",
     "license": "MIT",
     "require": {
-        "otghcloud/aurora-access-core": "*@dev",
+    "otghcloud/aurora-access-core": "^1.0",
         "techdock/opcua": "^0.3.0"
     },
     "autoload": {
