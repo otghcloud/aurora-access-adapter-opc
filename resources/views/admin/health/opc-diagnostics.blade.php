@@ -258,12 +258,12 @@
                             </td>
                             <td>{{ $binding['target_label'] ?? ($binding['target_type'].'#'.$binding['target_id']) }}</td>
                             <td>
-                                @if (is_bool($binding['edge_active']))
-                                    <span class="badge text-bg-{{ $binding['edge_active'] ? 'success' : 'secondary' }}">{{ $binding['edge_active'] ? 'active' : 'inactive' }}</span>
+                                @if (is_bool($binding['effective_active'] ?? null))
+                                    <span class="badge text-bg-{{ $binding['effective_active'] ? 'success' : 'secondary' }}">{{ $binding['effective_active'] ? 'HIGH' : 'LOW' }}</span>
                                 @else
                                     <span class="badge text-bg-warning">unknown</span>
                                 @endif
-                                <div class="small text-muted">reversed={{ $binding['signal_reversed'] ? 'yes' : 'no' }}</div>
+                                <div class="small text-muted">reversed={{ $binding['signal_reversed'] ? 'yes' : 'no' }} source={{ $binding['state_source'] ?? 'n/a' }}</div>
                             </td>
                             <td>
                                 @if (is_bool($binding['channel_discovered']))
