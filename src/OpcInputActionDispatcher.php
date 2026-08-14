@@ -91,9 +91,11 @@ class OpcInputActionDispatcher
                 }
 
                 $state = (bool) $isActive;
-                if ((bool) $sensor->state !== $state) {
-                    $sensor->forceFill(['state' => $state])->save();
+                if ((bool) $sensor->state === $state) {
+                    continue;
                 }
+
+                $sensor->forceFill(['state' => $state])->save();
 
                 app(AccessControlMqttPublisher::class)->publishSensorState(
                     $sensor->fresh(),
