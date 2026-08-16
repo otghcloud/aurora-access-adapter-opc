@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 namespace OTGH\AccessControl\OpcAdapter;
 
+use Illuminate\Support\Facades\Schedule;
 use Illuminate\Support\Facades\Schema;
 use Illuminate\Support\ServiceProvider;
 use OTGH\AccessControl\Core\Models\Hardware\Source;
@@ -140,6 +141,8 @@ CONF];
                 OpcTest::class,
                 SyncOpcMonitors::class,
             ]);
+
+            Schedule::command('app:sync-opc-monitors')->everyMinute()->withoutOverlapping();
         }
     }
 }
